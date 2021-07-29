@@ -1,0 +1,31 @@
+
+body {
+    font-family: 'Baloo Da 2', cursive;
+}
+
+.header-font{
+    font-family: 'DM Sans', sans-serif;
+}
+
+.header-text-color{
+    color: #005885;
+}
+
+.header-btn-bg-color{
+    background-color: #007A73;
+}
+
+.header-video{
+    width: 200px;
+    height: 130px;
+}
+
+.header-video-description-one{
+    background-color:  #005885;
+    width: 150px;
+    height: 130px;
+}
+
+.btn-background{
+    background-color: #005885;
+}
