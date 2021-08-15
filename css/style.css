@@ -33,3 +33,24 @@ body {
 .category-section{
     background: linear-gradient(to left, #99c9c7 50%, #99bcce 50%);
 }
+
+.bg-vertical-line{
+    background-image: url("../img/verticalLine.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-zakir-nayek{
+    background-color: #007A73;
+    position: relative;
+    height: 400px;
+    width: 300px;
+}
+
+.zakirNayek-img{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top: -25px;
+    left: 25px;
+}
