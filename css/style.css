@@ -29,3 +29,7 @@ body {
 .btn-background{
     background-color: #005885;
 }
+
+.category-section{
+    background: linear-gradient(to left, #99c9c7 50%, #99bcce 50%);
+}
