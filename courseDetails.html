@@ -111,7 +111,8 @@
         </div>
         <div class="mt-14 lg:p-8 p-5 rounded-lg border border-gray-200 shadow">
           <h1 class="text-4xl font-bold">আপনি যা যা শিখবেন</h1>
-          <div class="flex md:flex-row md:justify-between lg:space-x-10 md:space-x-6 flex-col space-y-4 md:space-y-0 mt-5">
+          <div
+            class="flex md:flex-row md:justify-between lg:space-x-10 md:space-x-6 flex-col space-y-4 md:space-y-0 mt-5">
             <div class="flex-1 space-y-4">
               <p><i class="fas fa-check-circle mr-4"></i> ইমাম আবু হানিফা রহঃ এর আক্বিদা</p>
               <p><i class="fas fa-check-circle mr-4"></i> ইমাম আবু হানিফা রহঃ এর আক্বিদা</p>
@@ -130,27 +131,112 @@
       <div class="card rounded-lg shadow border border-gray-200 pt-1 pb-2 px-1">
         <img src="./img/Mask.png" class="w-full rounded-t-md" alt="">
         <div class="px-2">
-            <p class="text-lg text-gray-700 font-semibold text-center mt-4">মূল্যঃ ২০০০ <s class="text-md">১০০০</s></p>
-            <div class="mt-3">
-              <a href="" class="py-2 block px-5 btn-background rounded-md text-white font-semibold flex items-center justify-center mx-6"><i class="fas fa-cart-arrow-down mr-3"></i> Add to cart</a>
-              <a href="" class="py-2 block px-5 rounded-md bg-white header-text-color border border-blue-700 mt-3 flex items-center justify-center font-semibold mx-6"><i class="fas fa-hand-point-right mr-3"></i> Buy it now</a>
+          <p class="text-lg text-gray-700 font-semibold text-center mt-4">মূল্যঃ ২০০০ <s class="text-md">১০০০</s></p>
+          <div class="mt-3">
+            <a href=""
+              class="py-2 block px-5 btn-background rounded-md text-white font-semibold flex items-center justify-center mx-6"><i
+                class="fas fa-cart-arrow-down mr-3"></i> Add to cart</a>
+            <a href=""
+              class="py-2 block px-5 rounded-md bg-white header-text-color border border-blue-700 mt-3 flex items-center justify-center font-semibold mx-6"><i
+                class="fas fa-hand-point-right mr-3"></i> Buy it now</a>
+          </div>
+          <div class="mt-5">
+            <h5 class="text-xl font-semibold">এই কোর্সে যা আছেঃ</h5>
+            <div class="mt-3 flex flex-col space-y-2 text-gray-600">
+              <p class="text-md"><i class="fas fa-book-open mr-5"></i> ১৩ পর্বের গোছানো ক্লাস</p>
+              <p class="text-md"><i class="fas fa-file-alt mr-6"></i> ২৪ টি আর্টিকেল (PDF/DOC)</p>
+              <p class="text-md"><i class="fas fa-expand-arrows-alt mr-6"></i> ফুল টাইম এক্সেস</p>
+              <p class="text-md"><i class="fas fa-file-signature mr-5"></i> ১৩ টি পরীক্ষা</p>
+              <p class="text-md"><i class="fas fa-rss-square mr-6"></i> ৫ টি লাইভ ক্লাস</p>
+              <p class="text-md"><i class="fas fa-certificate mr-5"></i> সার্টিফিকেট প্রদান</p>
             </div>
-            <div class="mt-5">
-              <h5 class="text-xl font-semibold">এই কোর্সে যা আছেঃ</h5>
-              <div class="mt-3 flex flex-col space-y-2 text-gray-600">
-                <p class="text-md"><i class="fas fa-book-open mr-5"></i> ১৩ পর্বের গোছানো ক্লাস</p>
-                <p class="text-md"><i class="fas fa-file-alt mr-6"></i> ২৪ টি আর্টিকেল (PDF/DOC)</p>
-                <p class="text-md"><i class="fas fa-expand-arrows-alt mr-6"></i> ফুল টাইম এক্সেস</p>
-                <p class="text-md"><i class="fas fa-file-signature mr-5"></i> ১৩ টি পরীক্ষা</p>
-                <p class="text-md"><i class="fas fa-rss-square mr-6"></i> ৫ টি লাইভ ক্লাস</p>
-                <p class="text-md"><i class="fas fa-certificate mr-5"></i> সার্টিফিকেট প্রদান</p>
-              </div>
-              <h4 class="text-center text-3xl lg:mt-3 mt-5">সম্পূর্ণ অনলাইন ভিত্তিক</h4>
-            </div>
+            <h4 class="text-center text-3xl lg:mt-3 mt-5">সম্পূর্ণ অনলাইন ভিত্তিক</h4>
+          </div>
         </div>
-    </div>
+      </div>
     </div>
   </main>
+
+  <section class="lg:mx-12 mx-4">
+    <div class="grid lg:grid-cols-3 grid-cols-1 lg:gap-16 gap-8">
+      <div class="lg:col-span-2 mt-10  rounded-lg border border-gray-200 shadow">
+        <h1 class="text-4xl font-bold lg:px-8 lg:-py-6 p-8">কোর্স বিষয়বস্তু</h1>
+        <div class="border border-gray-200 shadow">
+          <div x-data="{show: false}" @click.away="show = false" class="">
+            <button @click="show = ! show"
+              class="flex justify-between w-full border-0 bg-gray-100 text-gray-900 px-8 text-sm py-3 overflow-hidden focus:outline-none focus:border-white">
+              <div class="flex justify-between items-center"> <span>সেকশন - ১</span> <svg
+                  class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
+                  width="24">
+                  <path d="M7 10l5 5 5-5z" />
+                  <path d="M0 0h24v24H0z" fill="none" />
+                </svg>
+              </div>
+              <p class="text-end">৬ টি লেকচার || ৩০ মিনিট</p>
+            </button>
+            <div x-show="show" class=" py-2 bg-white shadow">
+              <a href="#"
+                class="flex items-center justify-between w-full px-8 py-2 text-gray-800 hover:bg-gray-100"><span><i
+                    class="fas fa-play mr-4"></i> ভিডিও - কোর্স পরিচিত</span> <span>০০ঃ৪৪</span></a>
+              <a href="#"
+                class="flex items-center justify-between w-full px-8 py-2 text-gray-800 hover:bg-gray-100"><span><i
+                    class="fas fa-file-alt mr-5"></i>আর্টিকেল - ইমাম আবু হানিফা রহঃ এর আক্বিদা</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 shadow">
+          <div x-data="{show: false}" @click.away="show = false" class="">
+            <button @click="show = ! show"
+              class="flex justify-between w-full border-0 bg-gray-100 text-gray-900 px-8 text-sm py-3 overflow-hidden focus:outline-none focus:border-white">
+              <div class="flex justify-between items-center"> <span>সেকশন - ২</span> <svg
+                  class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
+                  width="24">
+                  <path d="M7 10l5 5 5-5z" />
+                  <path d="M0 0h24v24H0z" fill="none" />
+                </svg>
+              </div>
+              <p class="text-end">৬ টি লেকচার || ৩০ মিনিট</p>
+            </button>
+            <div x-show="show" class=" py-2 bg-white shadow">
+              <a href="#"
+                class="flex items-center justify-between w-full px-8 py-2 text-gray-800 hover:bg-gray-100"><span><i
+                    class="fas fa-play mr-4"></i> ভিডিও - কোর্স পরিচিত</span> <span>০০ঃ৪৪</span></a>
+              <a href="#"
+                class="flex items-center justify-between w-full px-8 py-2 text-gray-800 hover:bg-gray-100"><span><i
+                    class="fas fa-file-alt mr-5"></i>আর্টিকেল - ইমাম আবু হানিফা রহঃ এর আক্বিদা</span></a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="border border-gray-200  rounded-b-lg">
+          <div x-data="{show: false}" @click.away="show = false" class="">
+            <button @click="show = ! show"
+              class="flex justify-between w-full border-0 bg-gray-100 text-gray-900 px-8 text-sm py-3 overflow-hidden focus:outline-none focus:border-white">
+              <div class="flex justify-between items-center"> <span>সেকশন - ৩</span> <svg
+                  class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
+                  width="24">
+                  <path d="M7 10l5 5 5-5z" />
+                  <path d="M0 0h24v24H0z" fill="none" />
+                </svg>
+              </div>
+              <p class="text-end">৬ টি লেকচার || ৩০ মিনিট</p>
+            </button>
+            <div x-show="show" class=" py-2 bg-white rounded-lg">
+              <a href="#"
+                class="flex items-center justify-between w-full px-8 py-2 text-gray-800 hover:bg-gray-100"><span><i
+                    class="fas fa-play mr-4"></i> ভিডিও - কোর্স পরিচিত</span> <span>০০ঃ৪৪</span></a>
+              <a href="#"
+                class="flex items-center justify-between w-full px-8 py-2 text-gray-800 hover:bg-gray-100"><span><i
+                    class="fas fa-file-alt mr-5"></i>আর্টিকেল - ইমাম আবু হানিফা রহঃ এর আক্বিদা</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div></div> -->
+    </div>
+  </section>
   <!-- important script tag regarding tailwind css -->
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </body>
