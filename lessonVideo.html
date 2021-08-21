@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lesson video page</title>
+
+  <!-- fontawesome link -->
+  <script src="https://kit.fontawesome.com/4c6530eb2c.js" crossorigin="anonymous"></script>
+
+  <!-- tailwind CSS CDN Link -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- google font links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- navbar starts for desktop version -->
+  <nav class="lg:px-24 md:px-8 header-font mb-10 hidden md:block bg-gray-100">
+    <div class="py-4">
+      <div class="md:flex justify-between items-center">
+        <div class="flex space-x-6">
+          <a href="" class="font-semibold">Courses</a>
+          <a href="" class="font-semibold">Blog</a>
+          <a href="" class="font-semibold">Community</a>
+        </div>
+        <div class="">
+          <a href="./index.html"><img src="./img/logo.png" class="h-10" alt=""></a>
+        </div>
+        <div class="flex space-x-6 items-center">
+          <a href="" class="font-semibold">Help</a>
+          <a href="" class="font-semibold">Login</a>
+          <a href="" class="btn-background py-2 px-3 rounded text-white">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends for desktop version -->
+  <!-- navbar for responsive purpose starts -->
+  <div class="w-full text-gray-700 bg-gray-100 block md:hidden mb-5">
+    <div x-data="{ open: false }"
+      class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+      <div class="p-4 flex flex-row items-center justify-between">
+        <a href="./index.html"><img src="./img/logo.png" class="" alt=""></a>
+        <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path x-show="!open" fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+            <path x-show="open" fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <nav :class="{'flex': open, 'hidden': !open}"
+        class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          href="#">Courses</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          href="#">Blog</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          href="#">Community</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          href="#">Help</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline text-center"
+          href="#">Login</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded md:mt-0 md:ml-4 text-white btn-background focus:outline-none focus:shadow-outline text-center"
+          href="#">Sign Up</a>
+      </nav>
+    </div>
+  </div>
+  <!-- navbar for responsive ends -->
+
+  <main class="xl:mx-16 md:mx-8 mx-4">
+    <div class="grid grid-cols-1 xl:grid-cols-3 lg:gap-6 gap-4">
+      <div class="xl:col-span-2">
+        <video src="https://media.geeksforgeeks.org/wp-content/uploads/20200409094356/Placement100-_-GeeksforGeeks2.mp4"
+          type="video/mp4" class="" controls poster="./img/VideoThumbnail.png">
+        </video>
+        <div class="pt-6 pb-4 flex md:flex-row flex-col space-y-2 md:space-y-0 justify-between">
+          <div>
+            <h4 class="text-xl">ইমাম আবু হানিফা রহঃ এর আক্বিদা বনাম তথাকথিত সালাফিদের আক্বিদা</h4>
+            <p class="text-gray-500 text-lg mt-3">1000 views .July 27, 2020</p>
+          </div>
+          <div class="space-x-3 text-xl">
+            <a href=""><i class="fas fa-thumbs-up text-blue-600"></i> 13k</a>
+            <a href=""><i class="fas fa-share-alt"></i> Share</a>
+          </div>
+        </div>
+        <div class="border-b border-gray-300"></div>
+        <div class="py-4">
+          <div class="flex sm:justify-between sm:flex-row flex-col space-y-3 sm:space-y-0">
+            <div class="flex sm:justify-between space-x-6">
+              <img class="rounded-full h-14 w-14" src="./img/Mask.png" alt="">
+              <div>
+                <p>মুফতি ইজহারুল ইসলাম</p>
+                <p class="text-gray-500">10 courses</p>
+              </div>
+            </div>
+            <div class="">
+              <a href="" class="bg-blue-900 inline-block text-white rounded-sm py-2 px-4">Mark as completed</a>
+            </div>
+          </div>
+        </div>
+        <div class="xl:mx-20 font-inter mb-5">
+          <p class="text-justify mb-3">Find your absolutely beautiful and serene place and
+            listen to nature sounds, birds signing and relaxing water sounds with breathtaking
+            views of Mount Shuksan. It’s 8-hour 4k video of discovery and peace. Download it for your
+            personal use and transform your 4K TV into a source of relaxation and restoration.</p>
+          <a href="" class="text-gray-500 text-sm">SHOW MORE</a>
+        </div>
+      </div>
+      <div class="space-y-4 mb-8 xl:mb-0">
+        <a href="" class="block">
+          <div class="flex space-x-4">
+            <video
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20200409094356/Placement100-_-GeeksforGeeks2.mp4"
+              type="video/mp4" class="header-video" controls poster="./img/Mask.png">
+            </video>
+            <div class="text-gray-900">
+              <p>ইমাম আবু হানিফা রহঃ এর আক্বিদা</p>
+              <p class="text-gray-600 font-semibold">মুফতি ইজহারুল ইসলাম</p>
+              <p class="text-gray-400">. Updated 2 mins ago</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="" class="block">
+          <div class="flex space-x-4">
+            <video
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20200409094356/Placement100-_-GeeksforGeeks2.mp4"
+              type="video/mp4" class="header-video" controls poster="./img/Mask-1.png">
+            </video>
+            <div class="text-gray-900">
+              <p>ইমাম আবু হানিফা রহঃ এর আক্বিদা</p>
+              <p class="text-gray-600 font-semibold">মুফতি ইজহারুল ইসলাম</p>
+              <p class="text-gray-400">. Updated 2 mins ago</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="" class="block">
+          <div class="flex space-x-4">
+            <video
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20200409094356/Placement100-_-GeeksforGeeks2.mp4"
+              type="video/mp4" class="header-video" controls poster="./img/Mask-2.png">
+            </video>
+            <div class="text-gray-900">
+              <p>ইমাম আবু হানিফা রহঃ এর আক্বিদা</p>
+              <p class="text-gray-600 font-semibold">মুফতি ইজহারুল ইসলাম</p>
+              <p class="text-gray-400">. Updated 2 mins ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <section class="bg-gray-100">
+    <div class="pb-6 lg:mx-24 mx-4">
+      <div class="grid lg:grid-cols-3 lg:grid-rows-3 grid-cols-1 gap-6">
+        <div class="lg:col-span-2 lg:row-span-1 mt-10  rounded-lg border border-gray-200 shadow bg-white">
+          <h1 class="text-4xl font-bold lg:px-8 lg:-py-6 px-8 py-6">কোর্স বিষয়বস্তু</h1>
+          <div class="border border-gray-200 shadow">
+            <div x-data="{show: false}" @click.away="show = false" class="">
+              <button @click="show = ! show"
+                class="flex justify-between w-full border-0 bg-gray-100 text-gray-900 px-8 text-sm py-3 overflow-hidden focus:outline-none focus:border-white">
+                <div class="flex justify-between items-center"> <span>সেকশন - ১</span> <svg
+                    class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" height="24"
+                    viewBox="0 0 24 24" width="24">
+                    <path d="M7 10l5 5 5-5z" />
+                    <path d="M0 0h24v24H0z" fill="none" />
+                  </svg>
+                </div>
+                <p class="text-end">৬ টি লেকচার || ৩০ মিনিট</p>
+              </button>
+              <div x-show="show" class=" py-2 bg-white shadow">
+                <a href="#"
+                  class="flex items-center justify-between w-full px-8 py-2 text-gray-800 hover:bg-gray-100"><span><i
+                      class="fas fa-play mr-4"></i> ভিডিও - কোর্স পরিচিত</span> <span>০০ঃ৪৪</span></a>
+                <a href="#"
+                  class="flex items-center justify-between w-full px-8 py-2 text-gray-800 hover:bg-gray-100"><span><i
+                      class="fas fa-file-alt mr-5"></i>আর্টিকেল - ইমাম আবু হানিফা রহঃ এর আক্বিদা</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-gray-200 shadow">
+            <div x-data="{show: false}" @click.away="show = false" class="">
+              <button @click="show = ! show"
+                class="flex justify-between w-full border-0 bg-gray-100 text-gray-900 px-8 text-sm py-3 overflow-hidden focus:outline-none focus:border-white">
+                <div class="flex justify-between items-center"> <span>সেকশন - ২</span> <svg
+                    class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" height="24"
+                    viewBox="0 0 24 24" width="24">
+                    <path d="M7 10l5 5 5-5z" />
+                    <path d="M0 0h24v24H0z" fill="none" />
+                  </svg>
+                </div>
+                <p class="text-end">৬ টি লেকচার || ৩০ মিনিট</p>
+              </button>
+              <div x-show="show" class=" py-2 bg-white shadow">
+                <a href="#"
+                  class="flex items-center justify-between w-full px-8 py-2 text-gray-800 hover:bg-gray-100"><span><i
+                      class="fas fa-play mr-4"></i> ভিডিও - কোর্স পরিচিত</span> <span>০০ঃ৪৪</span></a>
+                <a href="#"
+                  class="flex items-center justify-between w-full px-8 py-2 text-gray-800 hover:bg-gray-100"><span><i
+                      class="fas fa-file-alt mr-5"></i>আর্টিকেল - ইমাম আবু হানিফা রহঃ এর আক্বিদা</span></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="border border-gray-200">
+            <div x-data="{show: false}" @click.away="show = false" class="">
+              <button @click="show = ! show"
+                class="flex justify-between w-full border-0 bg-gray-100 text-gray-900 px-8 text-sm py-3 overflow-hidden focus:outline-none focus:border-white">
+                <div class="flex justify-between items-center"> <span>সেকশন - ৩</span> <svg
+                    class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" height="24"
+                    viewBox="0 0 24 24" width="24">
+                    <path d="M7 10l5 5 5-5z" />
+                    <path d="M0 0h24v24H0z" fill="none" />
+                  </svg>
+                </div>
+                <p class="text-end">৬ টি লেকচার || ৩০ মিনিট</p>
+              </button>
+              <div x-show="show" class=" py-2 bg-white">
+                <a href="#"
+                  class="flex items-center justify-between w-full px-8 py-2 text-gray-800 hover:bg-gray-100"><span><i
+                      class="fas fa-play mr-4"></i> ভিডিও - কোর্স পরিচিত</span> <span>০০ঃ৪৪</span></a>
+                <a href="#"
+                  class="flex items-center justify-between w-full px-8 py-2 text-gray-800 hover:bg-gray-100"><span><i
+                      class="fas fa-file-alt mr-5"></i>আর্টিকেল - ইমাম আবু হানিফা রহঃ এর আক্বিদা</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="text-center py-4">
+            <a href="" class="">আরো ৫টি সেকশন দেখুন</a>
+          </div>
+        </div>
+
+        <div class="lg:row-span-3">
+          <div class="flex flex-col space-y-4 lg:mt-10">
+            <div class="card rounded-lg shadow-lg border border-gray-200 xl:flex-1 pt-1 pb-5 px-1">
+              <img src="./img/Mask-1.png" class="w-full rounded-t-md" alt="">
+              <div class="px-2">
+                <p class="mt-4 text-xl font-semibold">ঈমাম আবু হানিফা রহঃ এর আক্বিদা</p>
+                <p class="text-base">মুফতি ইজহারুল ইসলাম</p>
+                <div class="flex space-x-1 items-center justify-end mt-3 mb-5">
+                  <i class="fas fa-star header-text-color"></i>
+                  <i class="fas fa-star header-text-color"></i>
+                  <i class="fas fa-star header-text-color"></i>
+                  <i class="fas fa-star header-text-color"></i>
+                  <i class="far fa-star header-text-color"></i>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="">
+                    <a href=""
+                      class="py-2 block px-5 btn-background rounded-md text-white font-semibold flex items-center justify-around"><i
+                        class="fas fa-cart-arrow-down mr-3"></i> Add to cart</a>
+                    <a href="./courseDetails.html"
+                      class="py-2 block px-5 rounded-md bg-white header-text-color border border-blue-700 mt-3 flex items-center justify-around font-semibold"><i
+                        class="fas fa-hand-point-right mr-3"></i> Buy it now</a>
+                  </div>
+                  <div class="">
+                    <p class="text-md text-gray-700">12 student joined</p>
+                    <div class="text-right mt-3">
+                      <p class="text-lg text-gray-700"><del>1000 BDT</del></p>
+                      <p class="font-bold text-xl text-gray-700">2000 BDT</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card rounded-lg shadow-lg border border-gray-200 xl:flex-1 pt-1 pb-5 px-1">
+              <img src="./img/Mask-1.png" class="w-full rounded-t-md" alt="">
+              <div class="px-2">
+                <p class="mt-4 text-xl font-semibold">ঈমাম আবু হানিফা রহঃ এর আক্বিদা</p>
+                <p class="text-base">মুফতি ইজহারুল ইসলাম</p>
+                <div class="flex space-x-1 items-center justify-end mt-3 mb-5">
+                  <i class="fas fa-star header-text-color"></i>
+                  <i class="fas fa-star header-text-color"></i>
+                  <i class="fas fa-star header-text-color"></i>
+                  <i class="fas fa-star header-text-color"></i>
+                  <i class="far fa-star header-text-color"></i>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="">
+                    <a href=""
+                      class="py-2 block px-5 btn-background rounded-md text-white font-semibold flex items-center justify-around"><i
+                        class="fas fa-cart-arrow-down mr-3"></i> Add to cart</a>
+                    <a href="./courseDetails.html"
+                      class="py-2 block px-5 rounded-md bg-white header-text-color border border-blue-700 mt-3 flex items-center justify-around font-semibold"><i
+                        class="fas fa-hand-point-right mr-3"></i> Buy it now</a>
+                  </div>
+                  <div class="">
+                    <p class="text-md text-gray-700">12 student joined</p>
+                    <div class="text-right mt-3">
+                      <p class="text-lg text-gray-700"><del>1000 BDT</del></p>
+                      <p class="font-bold text-xl text-gray-700">2000 BDT</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- important script tag regarding tailwind css -->
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</body>
+
+</html>

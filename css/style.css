@@ -11,6 +11,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.font-inter{
+    font-family: 'Inter', sans-serif;
+}
+
 .header-text-color{
     color: #005885;
 }
